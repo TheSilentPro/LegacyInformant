@@ -38,7 +38,7 @@ public class Utils {
     }
 
     private static String translatePlugin(String s, SpigotResource resource, Plugin plugin) {
-        return translate(s.replace("$pluginCurrentVersion", plugin.getDescription().getVersion()), resource);
+        return translate(s.replace("%pluginCurrentVersion%", plugin.getDescription().getVersion()), resource);
     }
 
     public static String translate(String s, SpigotResource resource) {
