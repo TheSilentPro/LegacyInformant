@@ -11,7 +11,7 @@ You only need to add `spigot-id` to your plugin.yml and informant will be able t
 For any plugins that do not have automatic checks, you will need to add them in the config.yml plugin under the `plugins` section!
 <br>
 The format is `ID:NAME`  <br>
-Name is from the `/plugins` folder. <br>
+Name is from the `/plugins` command. <br>
 
 Where ID is the spigot id of the resource which can be found in the url of their page. <br> 
 For example the plugin below has the ID: 84967. That is the number after the dot. <br>
