@@ -1,0 +1,52 @@
+# The interval at which plugins are checked in seconds
+interval: 86400
+
+# Webhook Configuration
+webhook:
+  # The url of the webhook
+  # Channel Settings > Integrations > New Webhook > Copy Webhook URL
+  url: ""
+
+# Checks installed plugins for updates
+# This will only check it if the plugin has specifically set the 'spigot-id' variable in their plugin.yml
+checkInstalled: true
+
+# Plugins to check
+# Format: id:name
+# .
+# Name is the name of the plugin in your /plugins folder
+# ID can be found in the url of the plugin on spigot
+# For example the plugin below has the ID: 84967. That is the number after the dot.
+# https://www.spigotmc.org/resources/headdb-head-menu-auto-update-free.84967
+plugins:
+  - ""
+
+# Message Customization
+message:
+  # Embed Author
+  author:
+    name: "Plugin update available!"
+    iconLink: "%resourceIconUrl%"
+    url: ""
+
+  # Embed Title
+  title:
+    name: "%resourceTitle% (%resourceId%)"
+    url: "https://www.spigotmc.org/resources/$resourceId"
+
+  # Embed Description
+  # Use \n for new line
+  # Note that $resourceDescription also returns markdown values like [CODE], [BOLD], etc...
+  description: "%resourceTag% \n"
+
+  # Embed Fields
+  # Format: INLINE;NAME;VALUE
+  # Fields MUST be separated with a colon (;)
+  # Fields MUST have all 3 values defined
+  fields:
+    - "true;Latest Version;%resourceCurrentVersion%"
+    - "true;Your Version;%pluginCurrentVersion%"
+    - "true;Download;[Spigot](https://www.spigotmc.org/resources/%resourceId%)"
+
+# Debug Mode
+debug: false

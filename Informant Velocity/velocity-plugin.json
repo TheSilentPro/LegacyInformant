@@ -1,0 +1,9 @@
+{
+  "id":"informant",
+  "name":"${project.name}",
+  "description":"${project.description}",
+  "version":"${project.version}",
+  "spigot-id":"100826",
+  "authors":["Silent"],
+  "main":"tsp.informant.velocity.Informant"
+}
