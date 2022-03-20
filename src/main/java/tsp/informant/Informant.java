@@ -31,6 +31,8 @@ public class Informant extends JavaPlugin {
                 .setDaemon(true)
                 .build();
 
+        new Metrics(this, 14694);
+
         Bukkit.getScheduler().runTaskTimerAsynchronously(this, new CheckTask().load(), 0L, getConfig().getLong("interval") * 20L);
         Log.info("Done!");
     }

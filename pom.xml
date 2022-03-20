@@ -6,7 +6,7 @@
 
     <groupId>tsp.informant</groupId>
     <artifactId>Informant</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Informant</name>
     <description>Informs you of plugin updates via discord</description>
