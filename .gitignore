@@ -2,7 +2,7 @@
 /target/
 /.idea
 dependency-reduced-pom.xml
-/Bungee/target
-/Spigot/target
-/Shared/target
-/Velocity/target
+/Bungee/target/
+/Spigot/target/
+/Shared/target/
+/Velocity/target/
