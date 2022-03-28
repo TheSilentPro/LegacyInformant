@@ -1,0 +1,7 @@
+name: Informant-Spigot
+description: Informs you of plugin updates via discord
+
+main: tsp.informant.spigot.Informant
+version: 2.0.0
+author: Silent
+spigot-id: 100826

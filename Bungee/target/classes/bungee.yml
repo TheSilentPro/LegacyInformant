@@ -1,0 +1,7 @@
+name: Informant-Bungee
+description: Informs you of plugin updates via discord
+
+main: tsp.informant.bungee.Informant
+version: 2.0.0-Bungee
+author: Silent, TheDevTec
+spigot-id: 100826

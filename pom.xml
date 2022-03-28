@@ -6,16 +6,20 @@
 
     <groupId>tsp.informant</groupId>
     <artifactId>Informant</artifactId>
-    <version>1.0.1</version>
+    <packaging>pom</packaging>
+    <version>2.0.0</version>
+
+    <modules>
+        <module>Bungee</module>
+        <module>Spigot</module>
+        <module>Velocity</module>
+        <module>Shared</module>
+    </modules>
 
     <name>Informant</name>
     <description>Informs you of plugin updates via discord</description>
 
     <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
@@ -23,12 +27,6 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.18-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>club.minnced</groupId>
             <artifactId>discord-webhooks</artifactId>
@@ -63,7 +61,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>tsp.informant.Informant</mainClass>
+                                    <mainClass>tsp.Informant</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
